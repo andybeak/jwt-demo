@@ -1,0 +1,32 @@
+{
+    "name": "andybeak/jwt-demo",
+    "description": "Demonstrate using a JWT library and maintaining a blacklist to simulate revocation.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Beak",
+            "email": "andy.beak@gmail.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "src/vendor/"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "ext-gmp" : "*",
+        "ext-json": "*",
+        "web-token/jwt-framework": "dev-master",
+        "pimple/pimple": "~3.0",
+        "vlucas/phpdotenv": "^3.6@dev",
+        "nikic/fast-route": "^2.0@dev",
+        "monolog/monolog": "^2.0@dev",
+        "symfony/http-foundation": "^5.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "JWTDemo\\":"src/"
+        }
+    }
+}
